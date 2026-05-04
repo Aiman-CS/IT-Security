@@ -1,0 +1,8 @@
+auf pcsec1 und pcsec2:
+apt install nmap
+
+Der Fehler Unable to locate package bedeutet oft nur, dass der lokale Index von apt leer ist. 
+Dann zuerst das ausführen:
+apt update 
+
+
