@@ -1,0 +1,46 @@
+[Misc]
+SetDatabasePath = /var/lib/samhain/samhain_file
+SetLogfilePath = /var/log/samhain/samhain.log
+SetFileCheckTime = 7200
+ChecksumTest = check
+
+[ReadOnly]
+dir = 99/etc
+file = /usr/sbin/samhain
+dir = 99/etc/samhain
+
+[EventSeverity]
+SeverityReadOnly = crit
+SeverityFiles = crit
+SeverityDirs = crit
+SeverityNames = crit
+
+[Log]
+PrintSeverity = info
+LogSeverity = info
+SyslogSeverity = none
+MailSeverity = none
+PreludeSeverity = none
+
+[IgnoreAll]
+dir = -1/etc/ssl/certs
+
+[SuidCheck]
+SuidCheckActive = no
+
+[ProcessCheck]
+ProcessCheckActive = no
+
+[PortCheck]
+PortCheckActive = no
+
+[Mounts]
+MountCheckActive = no
+
+[Logmon]
+LogmonActive = no
+
+[Utmp]
+LoginCheckActive = no
+
+[EOF]
